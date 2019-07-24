@@ -1,0 +1,207 @@
+---
+title: "AUDIKA ALICANTE GROUP 2020"
+author: "Jette Toft Borner"
+date: 'From 14th to 18th June, 2020'
+output:
+ 
+  html_document:
+    css: FORMATO.css
+    toc: true
+    toc_float: true
+      
+---
+
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = https://www.cuttingedge-events.com><img src ="LOGO.png" width="150" vspace="50" align="right"></A>') 
+    }); 
+</script> 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+```
+
+
+```{r libraries}
+library(readxl)
+library(shiny)
+library(dplyr)
+library(knitr)
+library(timevis)
+
+```
+
+<br>
+
+# **ALICANTE**
+
+Alicante has 218km of coastline with beautiful beaches and 330 days of sunshine per year.
+
+Its airport is very well connected with all Europe. You can see in the picture below the Alicante's Airport in black and all the destinations with direct flight.
+
+<iframe src="AeropuertoAlicante.html"  frameborder="0" width="100%" height="600" scrolling="no"></iframe>
+
+The two hotels we are suggesting, Asia Gardens and SH Villa Gadea, are located less than one hour from the Airport and they are close to the beach and the cities but both are like oasis in the midle of the nature.
+The location of these two hotels offer a lot of activity options: sea, mountain, sports, cultural...
+
+<iframe src="https://www.google.com/maps/d/embed?mid=18hbY79uxYKvZBIFsFzGZydqcseKZBmMq&hl=es" width="100%" height="500" ></iframe>
+
+<br>
+<br>
+
+# **SUGGESTED HOTELS** {.tabset .tabset-fade .tabset-pills}
+
+## ASIA GARDENS
+
+<iframe src="AsiaGardens/AsiaGardens.html"  frameborder="0" width="100%" height="1600" scrolling="no"></iframe>
+
+<br>
+<hr>
+
+**AUDIKA GROUP ACCOMMODATION:**
+
+We will have 125 Deluxe Rooms, these rooms have 34m2 and a terrace of 8m2, with views of the botanical gardens, swimming pools and/or mountains. Equipped with the latest technology including a 43" Full HD LED TV. A king-size or twin beds, spacious bathrooms with japanese panels with double wash basins, separate bath and shower.
+
+<img  src = "https://www.asiagardens.es/res/uploads/20151204140233-01-habdeluxegaleria-1800x7003.jpg" width="100%"> 
+
+<hr>
+
+**MEETING FACILITIES:**
+
+Following the request,  we propose the following meeting rooms for AUDIKA meetings:
+
+  * **Plenary room** Shanghai 4 + 5 (340m2) with natural light, up to 125pax in cabaret style
+  
+
+  * **Breakout room** Shanghai 2 (104m2) natural light. 
+
+<iframe src="AsiaGardens/AsiaGardenShanghai.html"  frameborder="0" width="100%" height="550" scrolling="no"></iframe>
+
+<hr>
+
+**DINNERS:**
+
+Asia Gardens is a big hotel so it has a lot of possibilities to organize meetings, work lunches and dinners in different spaces.
+We propose for the welcome dinner on June 14th, the Saigon Terrace where we can organize an informal dinner: Buffet or BBQ style.
+
+<img  src = "AsiaGardens/SALONES TERRAZA SAIGON 9 (1).jpg" width="100%"> 
+
+For the Gala dinner on June 17th we propose La Palapa restaurant located in the pool's area.  
+
+<iframe src="AsiaGardens/AsiaGardensTerraza.html"  frameborder="0" width="100%" height="600" scrolling="no"></iframe>
+
+
+## SH VILLAGADEA
+
+<iframe src="sh villagadea/SHVillagadea.html"  frameborder="0" width="100%" height="1100" scrolling="no"></iframe>
+
+<br>
+<hr>
+
+**AUDIKA GROUP ACCOMMODATION:**
+
+We will have 125 Standard Rooms. The standard rooms is an elegant 32m2 room (terrace included) with mediterranean style with a spacious bathroom.
+These rooms have views to the mountains or the gardens, not sea  views.
+
+<img  src = "https://q-cf.bstatic.com/images/hotel/max1024x768/204/204699154.jpg" width="100%"> 
+
+<hr>
+
+
+**MEETING FACILITIES:**
+
+Following the request, we propose the following meeting rooms for AUDIKA meetings:
+
+<iframe src="sh villagadea/FotoPalapameeting.html"  frameborder="0" width="100%" height="550" scrolling="no"></iframe>
+  
+<iframe src="sh villagadea/FotoPalmeral.html"  frameborder="0" width="100%" height="550" scrolling="no"></iframe>
+
+<hr>
+
+**DINNERS:**
+
+The idea would be to organize the welcome dinner on June 14th near the pool, maybe a BBQ dinner, having as backup the Veranda restaurant.
+
+<img  src = "https://www.grupobambu.es/wp-content/uploads/2018/02/PORTADA-6.jpg" width="100%"> 
+
+<img  src = "https://www.hotel-villa-gadea.com/wp-content/blogs.dir/1587/files/landings/xveranda-7.jpg.pagespeed.ic.tNk9gpqOKz.webp" width="100%"> 
+
+For the Gala dinner on June 17th we propose the Palapa room, we would need to change the set up and the decoration but is a beautiful space perfect for a Gala dinner and we can use the same stage and AV used for the meetings. See a dinner set up at La Palapa:
+
+<img  src = "Cena palapa.jpg" width="100%"> 
+
+<br>
+<hr>
+<br>
+
+
+# **SUGGESTED RESTAURANTS** {.tabset .tabset-fade .tabset-pills}
+
+## LA FALUA
+
+<iframe src="La Falua/La Falua.html"  frameborder="0" width="100%" height="1500" scrolling="no"></iframe>
+
+<br>
+
+## BAY CLUB ALTEA
+
+<iframe src="Bay Club/BayClub.html"  frameborder="0" width="100%" height="1500" scrolling="no"></iframe>
+
+<br>
+
+## RESTAURANT RICE
+
+<iframe src="Restaurant Rice/RestaurantRice.html"  frameborder="0" width="100%" height="1500" scrolling="no"></iframe>
+
+<br>
+
+## RESTAURANT SON DE MAR
+
+<iframe src="Son de Mar/SondeMar.html"  frameborder="0" width="100%" height="900" scrolling="no"></iframe>
+
+<br>
+
+## FINCA CAMINO VIEJO
+
+<iframe src="VenueFincaCaminoViejo/CaminoViejo.html"  frameborder="0" width="100%" height="1150" scrolling="no"></iframe>
+
+<br>
+
+# **ACTIVITIES**
+
+
+<iframe src="actividades/AlicanteActivities.html"  frameborder="0" width="100%" height="1050" scrolling="no"></iframe>
+
+<br>
+
+# **BUDGET**
+
+
+<iframe src="https://budgetaudikaalicante.netlify.com/"  frameborder="0" width="100%" height="2500" scrolling="no"></iframe>
+
+<br>
+
+*****
+
+# **TERMS & CONDITIONS**
+
+  * Rates valid for the requested dates (June 14th to 18th,2020).
+  
+  * For a group of minimum 115 pax.
+  
+  * Cutting Edge Events management fee including in the detailed rates
+  
+  * VAT included. 
+  
+  * No reservation has been done. Availability upon request.
+  
+  * Hotel Asia Gardens offer will be valid only if you contract 1 f&b service (lunch or dinner) per day for the whole group.
+  
+*****
+
+
+
+
+

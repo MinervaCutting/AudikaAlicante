@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+	<style>
+		:root {
+  /* Set fade in duration */
+  --fade-time: 0.5s;
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+  font-weight: 360;
+  line-height: 130%;
+  
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  border: #fff solid 1px;
+ 
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.imgs img {
+  cursor: pointer;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn var(--fade-time) ease-in 1 forwards;
+}
+
+/* Media Queries */
+@media(max-width: 600px) {
+  .imgs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+  <div class="activities" style="margin: auto; padding: 0px;">   
+    <h3>La Falua</h3>                                              <!--insertar titulo-->
+    <p> Since 2007 La Falua manage to prove, as one of the best modern restaurantes of the coast, standing in vanguard of a culinary fashion and style; specializing both in the Mediterranear kitchen and on the international.<p>
+
+    <p>La Falua is located in Benidorm and it has a huge terrace that can be covered in case of bad weather<p>
+
+    <p> The restaurant administration constantly improves service and expands the card of the menu aspiring to satisfy requirements of the most refined gourmets and esthetes.<p>
+
+                     <!--insertar el texto-->
+    <hr>
+  </div>
+	<div class="container">
+    <div class="main-img">
+      <img src="falua1.jpg" id="current">
+    </div>
+
+    <div class="imgs">                                          <!--insertar las fotos-->
+      <img src="falua1.jpg">
+      <img src="falua2.jpg">
+      <img src="falua4.jpg">
+      <img src="falua3.jpg">
+    </div>
+  </div>
+  <hr>
+  
+  <section class="container">
+
+<div class ="one" style="float: left;
+    padding: 10px; background-color: rgba(238, 238, 238, 0.6)">
+<p><i class="fa fa-map-o" style="font-size:20px;color:orange;"></i>   <!--insertar la info relevante a los iconos-->
+<span style="margin: 0 15px; font-size:14px"><b>Location:</b> Benidorm </p></span>
+<p><i class="fa fa-cutlery" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 20px; font-size:14px"><b>Dining room capacities:</b> max 135 pax</p></span>
+<p><i class="fa fa-eur" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 23px; font-size:14px"><b>Price Level:</b> average-high</p></span>
+</div>
+
+<div class ="two" style="float: right;
+    padding: 10px; background-color: rgba(238, 238, 238, 0.6); ">
+
+<p><i class="fa fa-handshake-o" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 3px; font-size:14px"><b>Style:</b> Mix of Mediterranean and international cuisine</p></span>
+<p><i class="fa fa-apple" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 10px"><b>Vegetarian Options/Special diets:</b> Available</p></span>
+<p><i class="fa fa-wheelchair" style="font-size:22px;color:orange;"></i>   
+<span style="margin: 0 90px, font-size:14px"><b>Handicapped facilities:</b> Yes</p></span>
+</div>
+
+ <hr>
+<br>
+
+</div>
+  <iframe class="image_rotator_fixed" style="z-index:1;" src="https://www.google.com/maps/embed?pb=!1m0!4v1416473029747!6m8!1m7!1sAB2gNh6r3aYAAAQfCWYTDQ!2m2!1d38.53277832958316!2d-0.1600348758590826!3f351.2460419797591!4f-6.064996944063537!5f0.7820865974627469" width="100%" height="500" frameborder="0" style="border:0"></iframe>
+</div>
+
+
+</section>
+</div> 
+	<script>
+		const current = document.querySelector('#current');
+const imgs = document.querySelector('.imgs');
+const img = document.querySelectorAll('.imgs img');
+const opacity = 0.6;
+
+// Set first img opacity
+img[0].style.opacity = opacity;
+
+imgs.addEventListener('click', imgClick);
+
+function imgClick(e) {
+  // Reset the opacity
+  img.forEach(img => (img.style.opacity = 1));
+
+  // Change current image to src of clicked image
+  current.src = e.target.src;
+
+  // Add fade in class
+  current.classList.add('fade-in');
+
+  // Remove fade-in class after .5 seconds
+  setTimeout(() => current.classList.remove('fade-in'), 500);
+
+  // Change the opacity to opacity var
+  e.target.style.opacity = opacity;
+}
+
+	</script>
+</body>
+</html>
